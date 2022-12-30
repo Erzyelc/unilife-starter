@@ -4,10 +4,10 @@
     align-items: center;
     justify-content: space-between;
     height: 60px;
-    position: fixed;
+    /*position: fixed;*/
     width: 100%;
     z-index: 2;
-    top: 0;
+    /*top: 0;*/
 }
 
 .header-logo-container{
