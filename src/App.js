@@ -4,15 +4,20 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Homepage from './components/Pages/Homepage/Homepage';
 import Banner from './components/Banner/Banner';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 function App() {
 
   return (
-    <div>
+    <div className="app">
+    <BrowserRouter>
       <Header />
       <Banner />
-      <Homepage />
+      <Routes>
+        <Route path="/" element={<Homepage />}/>
+      </Routes>
       <Footer />
+    </BrowserRouter>
     </div>
   );
 }

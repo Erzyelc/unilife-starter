@@ -4,12 +4,14 @@ import UniLife from "../../assets/UniLife.png"
 import heart from "../../assets/Vector.png"
 import envelope from "../../assets/Vector-2.png"
 import house from "../../assets/Vector.svg"
+import {Link} from 'react-router-dom'
 
 const Header = () => {
   return (
     <div className="header-container">
     <div className="header-logo-container">
-        <img src={house} alt="" className="house-img"/>
+        {/*<img src={house} alt="" className="house-img"/>*/}
+        <Link to="/"><img src={house} className="house-img"></img></Link>
         <img src={UniLife} alt="" className="logo"/>
     </div>
         <div className="header-sub-container">
